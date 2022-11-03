@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8768e87a-3f15-4fb1-a673-375f5557eae3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/LuxBilibiliApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/DemoApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/RESTfulApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/resources/application-online.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/DemoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/JsonResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/constant/UserConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/exception/ConditionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/DemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/config/JsonHttpMessageConverterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/handler/CommonGlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util/AESUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util/RSAUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util/TokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lux/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$PROJECT_DIR$/../../Libs/apache-maven-3.8.6/repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Libs/apache-maven-3.8.6" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../Libs/apache-maven-3.8.6/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2GvB276PFCQCvOKalYnz2Xm8cmM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/Users/sines/Code/GithubProj/lux-bilibili/lux-bilibili-dao/src/main/resources/mapper",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "spring.configuration.checksum": "0848cfa1b12e93ecb35d0f04846b92cc"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.JsonHttpMessageConverterConfig">
+    <configuration name="JsonHttpMessageConverterConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lux.bilibili.service.config.JsonHttpMessageConverterConfig" />
+      <module name="lux-bilibili-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lux.bilibili.service.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lux_bilibili-endpoints_2 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="lux_bilibili-endpoints_2 | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="lux_bilibili-endpoints_2 | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="lux_bilibili-endpoints_2 | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.JsonHttpMessageConverterConfig" />
+      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #1" />
+      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #2" />
+      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #3" />
+      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #4" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JsonHttpMessageConverterConfig" />
+        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #3" />
+        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #4" />
+        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #2" />
+        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8768e87a-3f15-4fb1-a673-375f5557eae3" name="Changes" comment="" />
+      <created>1667258967391</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667258967391</updated>
+      <workItem from="1667258968710" duration="14098000" />
+      <workItem from="1667354428718" duration="2423000" />
+      <workItem from="1667417110679" duration="13057000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,260 @@
+GET http://localhost:8080/objects/3
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/objects/3
+
+<> 2022-11-02T180355.200.txt
+
+###
+
+GET http://localhost:8080/objects/3
+Accept: application/json
+
+<> 2022-11-02T174446.200.json
+
+###
+
+POST http://localhost:8080/objects
+Content-Type: application/json;charset=UTF-8
+
+{
+  "id": 3,
+  "name": "name3"
+}
+
+<> 2022-11-02T174442.200.txt
+
+###
+
+GET http://localhost:8080/objects/3
+Accept: application/json
+
+<> 2022-11-02T174440.200.json
+
+###
+
+POST http://localhost:8080/objects
+Content-Type: application/json;charset=UTF-8
+
+{
+  "id": 3,
+  "name": "name3"
+}
+
+<> 2022-11-02T174438.200.txt
+
+###
+
+GET http://localhost:8080/objects/3
+Accept: application/json
+
+<> 2022-11-02T174434.200.json
+
+###
+
+PUT http://localhost:8080/objects
+Content-Type: application/json;charset=UTF-8
+
+{
+  "id": 3,
+  "name": "name_3"
+}
+
+<> 2022-11-02T174430.200.txt
+
+###
+
+GET http://localhost:8080/objects/3
+Accept: application/json
+
+<> 2022-11-02T174327.200.json
+
+###
+
+POST http://localhost:8080/objects
+Content-Type: application/json;charset=UTF-8
+
+{
+  "id": 3,
+  "name": "name3"
+}
+
+<> 2022-11-02T174228.200.txt
+
+###
+
+POST http://localhost:8080/objects
+Content-Type: application/json;charset=UTF-8
+id=3&name=name3:
+
+<> 2022-11-02T174058.400.html
+
+###
+
+POST http://localhost:8080/objects
+Content-Type: application/json;charset=UTF-8
+id=3&name=name3:
+
+<> 2022-11-02T174056.400.html
+
+###
+
+POST http://localhost:8080/objects
+Content-Type: application/json;charset=UTF-8
+"{:
+  "id": 3
+  "name": "name3"
+}":
+
+<> 2022-11-02T174031.400.html
+
+###
+
+POST http://localhost:8080/objects
+
+id=3&name=name3
+
+<> 2022-11-02T173856.415.json
+
+###
+
+GET http://localhost:8080/objects/5
+
+###
+
+GET http://localhost:8080/objects/2
+
+<> 2022-11-02T173441.200.json
+
+###
+
+GET http://localhost:8080/objects/1
+
+<> 2022-11-02T173430.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T223044.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T223042.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T223012.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T223011.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T222943.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T222929.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T222857.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T222856.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T222833.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T222609.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T222505.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T222504.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T222503.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T222459.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T222350.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T222328.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T213846.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T213845.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+<> 2022-11-01T213842.200.json
+
+###
+
+GET http://localhost:8080/query?id=1
+
+###
+
+GET http://localhost:8080/query?id=1
+
+###
+
