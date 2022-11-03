@@ -62,7 +62,7 @@ public class UserService {
         return userDao.getUserByPhone(phone);
     }
 
-    public String login(User user) {
+    public String login(User user) throws Exception {
         String phone = user.getPhone();
         if (StringUtils.isNullOrEmpty(phone)) {
             throw new ConditionException("Phone number cannot be empty!");
@@ -87,6 +87,6 @@ public class UserService {
             throw new ConditionException("Wrong password!");
         }
 
-        return new TokenUtil().generateToken(dbUser.getId());
+        return TokenUtil.generateToken(dbUser.getId());
     }
 }
