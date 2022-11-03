@@ -5,11 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8768e87a-3f15-4fb1-a673-375f5557eae3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/support/UserSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/daf28ef8-be14-47f1-bc0f-53fadea76f1c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/daf28ef8-be14-47f1-bc0f-53fadea76f1c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T213842.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T213845.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T213846.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T222328.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T222350.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T222459.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T222503.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T222504.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T222505.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T222609.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T222833.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T222856.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T222857.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T222929.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T222943.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T223011.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T223012.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T223042.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-01T223044.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/LuxBilibiliApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/LuxBilibiliApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/user.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util/TokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +58,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../Libs/apache-maven-3.8.6/repo/com/auth0/java-jwt/3.18.2/java-jwt-3.18.2.jar!/com/auth0/jwt/JWTCreator.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" root0="SKIP_INSPECTION" />
   </component>
   <component name="HttpClientSelectedEnvironments">
@@ -55,35 +82,36 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/sines/Code/GithubProj/lux-bilibili/lux-bilibili-dao/src/main/resources/mapper",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "spring.configuration.checksum": "0848cfa1b12e93ecb35d0f04846b92cc"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sines/Code/GithubProj/lux-bilibili/lux-bilibili-dao/src/main/resources/mapper&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0848cfa1b12e93ecb35d0f04846b92cc&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper" />
@@ -97,13 +125,25 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JsonHttpMessageConverterConfig">
-    <configuration name="JsonHttpMessageConverterConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lux.bilibili.service.config.JsonHttpMessageConverterConfig" />
-      <module name="lux-bilibili-service" />
+  <component name="RunManager" selected="HTTP Request.lux_bilibili-endpoints_2 | #7">
+    <configuration name="lux_bilibili-endpoints_2 | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="lux_bilibili-endpoints_2 | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="lux_bilibili-endpoints_2 | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="6" requestIdentifier="#6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="lux_bilibili-endpoints_2 | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="7" requestIdentifier="#7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="LuxBilibiliApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lux-bilibili-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lux.LuxBilibiliApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lux.bilibili.service.config.*" />
+          <option name="PATTERN" value="com.lux.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,32 +151,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lux_bilibili-endpoints_2 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="lux_bilibili-endpoints_2 | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="lux_bilibili-endpoints_2 | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="3" requestIdentifier="#3" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="lux_bilibili-endpoints_2 | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="4" requestIdentifier="#4" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Application.JsonHttpMessageConverterConfig" />
-      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #1" />
-      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #2" />
-      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #3" />
+      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #6" />
+      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #7" />
       <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #4" />
+      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #5" />
+      <item itemvalue="Spring Boot.LuxBilibiliApp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JsonHttpMessageConverterConfig" />
-        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #3" />
+        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #7" />
+        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #6" />
+        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #5" />
+        <item itemvalue="Spring Boot.LuxBilibiliApp" />
         <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #4" />
-        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #2" />
-        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +178,8 @@
       <updated>1667258967391</updated>
       <workItem from="1667258968710" duration="14098000" />
       <workItem from="1667354428718" duration="2423000" />
-      <workItem from="1667417110679" duration="14138000" />
+      <workItem from="1667417110679" duration="17343000" />
+      <workItem from="1667492083149" duration="5664000" />
     </task>
     <servers />
   </component>

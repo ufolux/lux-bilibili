@@ -27,7 +27,7 @@ public class TokenUtil {
                 .sign(algorithm);
     }
 
-    public static Long verifyToken(String token) throws Exception {
+    public static Long verifyToken(String token) {
         try {
             Algorithm algorithm = Algorithm.RSA256(RSAUtil.getPublicKey(), RSAUtil.getPrivateKey());
             JWTVerifier verifier = JWT.require(algorithm).build();

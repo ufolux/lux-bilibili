@@ -1097,17 +1097,17 @@
     <schema id="325" parent="1" name="information_schema">
       <CollationName>utf8mb3_general_ci</CollationName>
     </schema>
-    <schema id="326" parent="1" name="lux-bilibili">
+    <schema id="326" parent="1" name="mysql">
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="327" parent="1" name="mysql">
+    <schema id="327" parent="1" name="performance_schema">
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </schema>
+    <schema id="328" parent="1" name="sys">
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </schema>
+    <schema id="329" parent="1" name="lux-bilibili">
       <CollationName>utf8mb4_general_ci</CollationName>
-    </schema>
-    <schema id="328" parent="1" name="performance_schema">
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </schema>
-    <schema id="329" parent="1" name="sys">
-      <CollationName>utf8mb3_general_ci</CollationName>
     </schema>
     <user id="330" parent="1" name="mariadb.sys">
       <Host>localhost</Host>
@@ -1121,62 +1121,62 @@
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="335" parent="326" name="t_auth_element_operation">
+    <table id="335" parent="329" name="t_auth_element_operation">
       <Comment>权限控制--页面元素操作表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="336" parent="326" name="t_auth_menu">
+    <table id="336" parent="329" name="t_auth_menu">
       <Comment>权限控制-页面访问表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="337" parent="326" name="t_auth_role">
+    <table id="337" parent="329" name="t_auth_role">
       <Comment>权限控制--角色表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="338" parent="326" name="t_auth_role_element_operation">
+    <table id="338" parent="329" name="t_auth_role_element_operation">
       <Comment>权限控制--角色与元素操作关联表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="339" parent="326" name="t_auth_role_menu">
+    <table id="339" parent="329" name="t_auth_role_menu">
       <Comment>权限控制--角色页面菜单关联表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="340" parent="326" name="t_following_group">
+    <table id="340" parent="329" name="t_following_group">
       <Comment>用户关注分组表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="341" parent="326" name="t_refresh_token">
+    <table id="341" parent="329" name="t_refresh_token">
       <Comment>刷新令牌记录表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="342" parent="326" name="t_user">
+    <table id="342" parent="329" name="t_user">
       <Comment>用户表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="343" parent="326" name="t_user_following">
+    <table id="343" parent="329" name="t_user_following">
       <Comment>用户关注表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="344" parent="326" name="t_user_info">
+    <table id="344" parent="329" name="t_user_info">
       <Comment>用户基本信息表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="345" parent="326" name="t_user_moments">
+    <table id="345" parent="329" name="t_user_moments">
       <Comment>用户动态表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="346" parent="326" name="t_user_role">
+    <table id="346" parent="329" name="t_user_role">
       <Comment>用户角色关联表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>

@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class LuxBilibiliApp {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         ApplicationContext app = SpringApplication.run(LuxBilibiliApp.class, args);
     }
 }

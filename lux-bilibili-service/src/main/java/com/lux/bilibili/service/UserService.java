@@ -44,7 +44,7 @@ public class UserService {
 
         String MD5Password = MD5Util.sign(rawPassword, salt, "UTF-8");
         user.setSalt(salt);
-        user.setPassword(password);
+        user.setPassword(MD5Password);
         user.setCreateTime(now);
         userDao.addUser(user);
 
@@ -88,5 +88,36 @@ public class UserService {
         }
 
         return TokenUtil.generateToken(dbUser.getId());
+    }
+
+    public User getUserInfo(Long userId) {
+        User user = userDao.getUserById(userId);
+        UserInfo userInfo = userDao.getUserInfoById(userId);
+        user.setUserInfo(userInfo);
+        return user;
+    }
+
+    public void updateUsers(User user) throws Exception {
+        Long id = user.getId();
+        User dbUser = userDao.getUserById(id);
+        if (dbUser == null) {
+            throw new ConditionException("User doesn't exist!");
+        }
+
+        Date now = new Date();
+        if (!StringUtils.isNullOrEmpty(user.getPassword())) {
+            String salt = String.valueOf(now.getTime());
+            user.setSalt(salt);
+            String rawPassword = RSAUtil.decrypt(user.getPassword());
+            String md5Password = MD5Util.sign(rawPassword, salt, "UTF-8");
+            user.setPassword(md5Password);
+        }
+        user.setUpdateTime(now);
+        userDao.updateUser(user);
+    }
+
+    public void updateUserInfos(UserInfo userInfo) {
+        userInfo.setUpdateTime(new Date());
+        userDao.updateUserInfos(userInfo);
     }
 }
