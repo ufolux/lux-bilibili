@@ -14,5 +14,8 @@ public interface UserConstant {
 
     public static final String USER_FOLLOWING_GROUP_TYPE_DEFAULT = "2";
 
+    //    User customize group
+    public static final String USER_FOLLOWING_GROUP_TYPE_USER = "3";
+
     public static final String USER_FOLLOWING_GROUP_ALL_NAME = "All following";
 }

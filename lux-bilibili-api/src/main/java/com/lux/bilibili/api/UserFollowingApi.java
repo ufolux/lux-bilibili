@@ -1,15 +1,12 @@
 package com.lux.bilibili.api;
 
+import com.alibaba.fastjson.JSONObject;
 import com.lux.bilibili.api.support.UserSupport;
-import com.lux.bilibili.domain.FollowingGroup;
-import com.lux.bilibili.domain.JsonResponse;
-import com.lux.bilibili.domain.UserFollowing;
+import com.lux.bilibili.domain.*;
 import com.lux.bilibili.service.UserFollowingService;
+import com.lux.bilibili.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,6 +15,9 @@ public class UserFollowingApi {
 
     @Autowired
     private UserFollowingService userFollowingService;
+
+    @Autowired
+    private UserService userService;
 
     @Autowired
     private UserSupport userSupport;
@@ -42,5 +42,20 @@ public class UserFollowingApi {
         Long userId = userSupport.getCurrentUserId();
         List<UserFollowing> res = userFollowingService.getUserFans(userId);
         return new JsonResponse<>(res);
+    }
+
+    @PostMapping("/user-following-groups")
+    public JsonResponse<Long> addUserFollowingGroups(@RequestBody FollowingGroup followingGroup) {
+        Long userId = userSupport.getCurrentUserId();
+        followingGroup.setUserId(userId);
+        Long groupId = userFollowingService.addUserFollowingGroups(followingGroup);
+        return new JsonResponse<>(groupId);
+    }
+
+    @GetMapping("/user-following-groups")
+    public JsonResponse<List<FollowingGroup>> getUserFollowingGroups() {
+        Long userId = userSupport.getCurrentUserId();
+        List<FollowingGroup> list = userFollowingService.getUserFollowingGroups(userId);
+        return new JsonResponse<>(list);
     }
 }
