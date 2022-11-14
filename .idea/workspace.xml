@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8768e87a-3f15-4fb1-a673-375f5557eae3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/constant/UserMomentConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/config/RocketMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util/RocketMQUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserFollowingApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserFollowingApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/FollowingGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/FollowingGroupDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/constant/UserConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/constant/UserConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/followingGroup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/followingGroup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/user.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/FollowingGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/FollowingGroupService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserFollowingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserFollowingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +162,8 @@
       <workItem from="1667354428718" duration="2423000" />
       <workItem from="1667417110679" duration="17343000" />
       <workItem from="1667492083149" duration="19786000" />
-      <workItem from="1668054770811" duration="11510000" />
+      <workItem from="1668054770811" duration="13721000" />
+      <workItem from="1668404812219" duration="737000" />
     </task>
     <servers />
   </component>
