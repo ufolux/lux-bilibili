@@ -69,6 +69,13 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
             <version>2.2.2.RELEASE</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-resolver-dns-native-macos</artifactId>
+            <version>4.1.72.Final</version>
+            <classifier>osx-aarch_64</classifier>
+        </dependency>
     </dependencies>
 
     <modules>
