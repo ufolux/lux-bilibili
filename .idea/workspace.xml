@@ -5,17 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8768e87a-3f15-4fb1-a673-375f5557eae3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserMomentsApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/UserMomentsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/UserMoment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/userMoments.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserMomentsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserAuthApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/AuthRoleElementOperationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/AuthRoleMenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/UserRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/auth/AuthElementOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/auth/AuthMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/auth/AuthRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/auth/AuthRoleElementOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/auth/AuthRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/auth/UserAuthorities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/auth/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/authRoleElementOperation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/authRoleMenu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/userRole.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/AuthRoleElementOperationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/AuthRoleMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/AuthRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserAuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserRoleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/resources/application-test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/config/RocketMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/config/RocketMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util/TokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +115,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.lux.bilibili.dao" />
       <recent name="com.lux.bilibili.service" />
+      <recent name="com.lux.bilibili.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper" />
@@ -178,7 +187,8 @@
       <workItem from="1667492083149" duration="19786000" />
       <workItem from="1668054770811" duration="13721000" />
       <workItem from="1668404812219" duration="14338000" />
-      <workItem from="1668470093772" duration="1441000" />
+      <workItem from="1668470093772" duration="1995000" />
+      <workItem from="1668719049277" duration="14085000" />
     </task>
     <servers />
   </component>
