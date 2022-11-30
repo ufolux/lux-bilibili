@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8768e87a-3f15-4fb1-a673-375f5557eae3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/aspect/ApiLimitedRoleAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/annotation/ApiLimitedRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/constant/AuthRoleConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/aspect/DataLimitedAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/annotation/DataLimited.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserAuthApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserAuthApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserMomentsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserMomentsApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/auth/AuthMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/auth/AuthMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/authRoleElementOperation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/authRoleElementOperation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/authRoleMenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/authRoleMenu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/userRole.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/userRole.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserAuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/aspect/ApiLimitedRoleAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/aspect/ApiLimitedRoleAspect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +110,10 @@
       <recent name="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lux.bilibili.api.aspect" />
+      <recent name="com.lux.bilibili.domain.annotation" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -163,8 +158,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #10" />
-        <item itemvalue="Spring Boot.LuxBilibiliApp" />
         <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #9" />
+        <item itemvalue="Spring Boot.LuxBilibiliApp" />
         <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #11" />
         <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #8" />
       </list>
@@ -186,7 +181,7 @@
       <workItem from="1668404812219" duration="14338000" />
       <workItem from="1668470093772" duration="1995000" />
       <workItem from="1668719049277" duration="14718000" />
-      <workItem from="1669673449824" duration="15234000" />
+      <workItem from="1669673449824" duration="18756000" />
     </task>
     <servers />
   </component>
@@ -209,8 +204,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserMomentsApi.java</url>
-          <line>31</line>
+          <line>33</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/aspect/DataLimitedAspect.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

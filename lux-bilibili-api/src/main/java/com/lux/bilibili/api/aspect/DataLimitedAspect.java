@@ -1,10 +1,11 @@
 package com.lux.bilibili.api.aspect;
 
 import com.lux.bilibili.api.support.UserSupport;
+import com.lux.bilibili.domain.UserMoment;
 import com.lux.bilibili.domain.annotation.ApiLimitedRole;
 import com.lux.bilibili.domain.auth.UserRole;
+import com.lux.bilibili.domain.constant.AuthRoleConstant;
 import com.lux.bilibili.service.UserRoleService;
-import org.apache.tomcat.jni.User;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -21,7 +22,7 @@ import java.util.stream.Collectors;
 @Order(1)
 @Component
 @Aspect
-public class ApiLimitedRoleAspect {
+public class DataLimitedAspect {
 
     @Autowired
     UserSupport userSupport;
@@ -29,20 +30,24 @@ public class ApiLimitedRoleAspect {
     @Autowired
     UserRoleService userRoleService;
 
-    @Pointcut("@annotation(com.lux.bilibili.domain.annotation.ApiLimitedRole)")
+    @Pointcut("@annotation(com.lux.bilibili.domain.annotation.DataLimited)")
     public void check() {
     }
 
-    @Before("check() && @annotation(apiLimitedRole)")
-    public void doBefore(JoinPoint joinPoint, ApiLimitedRole apiLimitedRole) {
+    @Before("check()")
+    public void doBefore(JoinPoint joinPoint) {
         Long userId = userSupport.getCurrentUserId();
         List<UserRole> userRoleList = userRoleService.getUserRoleByUserId(userId);
-        String[] limitedRoleCodeList = apiLimitedRole.limitedRoleCodeList();
-        Set<String> limitedRoleCodeSet = Arrays.stream(limitedRoleCodeList).collect(Collectors.toSet());
         Set<String> roleCodeSet = userRoleList.stream().map(UserRole::getRoleCode).collect(Collectors.toSet());
-        roleCodeSet.retainAll(limitedRoleCodeSet);
-        if (roleCodeSet.size() > 0) {
-            throw new RuntimeException("No permission for this role!");
+        Object[] args = joinPoint.getArgs();
+        for (Object arg : args) {
+            if (arg instanceof UserMoment) {
+                UserMoment userMoment = (UserMoment) arg;
+                String type = userMoment.getType();
+                if (roleCodeSet.contains(AuthRoleConstant.ROLE_LV1) && !"0".equals(type)) {
+                    throw new RuntimeException("Args error!");
+                }
+            }
         }
     }
 }
