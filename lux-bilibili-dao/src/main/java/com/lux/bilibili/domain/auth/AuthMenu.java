@@ -8,6 +8,12 @@ public class AuthMenu {
 
     private String name;
 
+    private String code;
+
+    private Date createTime;
+
+    private Date updateTime;
+
     public Long getId() {
         return id;
     }
@@ -47,10 +53,4 @@ public class AuthMenu {
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
-
-    private String code;
-
-    private Date createTime;
-
-    private Date updateTime;
 }

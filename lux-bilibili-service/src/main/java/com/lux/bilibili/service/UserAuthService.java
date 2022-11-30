@@ -5,11 +5,13 @@ import com.lux.bilibili.domain.auth.AuthRoleMenu;
 import com.lux.bilibili.domain.auth.UserAuthorities;
 import com.lux.bilibili.domain.auth.UserRole;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@Service
 public class UserAuthService {
 
     @Autowired

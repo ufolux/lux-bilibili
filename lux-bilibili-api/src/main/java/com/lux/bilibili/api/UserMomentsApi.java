@@ -3,6 +3,8 @@ package com.lux.bilibili.api;
 import com.lux.bilibili.api.support.UserSupport;
 import com.lux.bilibili.domain.JsonResponse;
 import com.lux.bilibili.domain.UserMoment;
+import com.lux.bilibili.domain.annotation.ApiLimitedRole;
+import com.lux.bilibili.domain.constant.AuthRoleConstant;
 import com.lux.bilibili.service.UserMomentsService;
 import org.apache.rocketmq.client.exception.MQBrokerException;
 import org.apache.rocketmq.client.exception.MQClientException;
@@ -24,6 +26,7 @@ public class UserMomentsApi {
     @Autowired
     private UserSupport userSupport;
 
+    @ApiLimitedRole(limitedRoleCodeList = {AuthRoleConstant.ROLE_LV0})
     @PostMapping("/user-moments")
     public JsonResponse<String> addUserMoments(@RequestBody UserMoment userMoment) throws Exception {
         Long userId = userSupport.getCurrentUserId();

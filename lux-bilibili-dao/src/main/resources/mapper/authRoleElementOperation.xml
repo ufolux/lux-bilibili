@@ -3,14 +3,14 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lux.bilibili.dao.AuthRoleElementOperationDao">
-    <resultMap id="AuthElementOperationResultMap" type="com.lux.bilibili.domain.auth.AuthElementOperation">
+    <resultMap id="AuthElementOperationResultMap" type="com.lux.bilibili.domain.auth.AuthRoleElementOperation">
         <id column="id" property="id"/>
         <result column="roleId" property="roleId"/>
         <result column="elementOperationId" property="elementOperationId"/>
         <association property="authElementOperation" javaType="com.lux.bilibili.domain.auth.AuthElementOperation">
             <id column="elementName" property="elementName"/>
-            <result column="roleId" property="roleId"/>
-            <result column="operationType" property="operationType"/>
+            <id column="elementCode" property="elementCode"/>
+            <id column="operationType" property="operationType"/>
         </association>
     </resultMap>
 

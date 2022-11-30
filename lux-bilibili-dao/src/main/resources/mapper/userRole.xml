@@ -6,8 +6,8 @@
     <select id="getUserRoleByUserId" parameterType="java.lang.Long" resultType="com.lux.bilibili.domain.auth.UserRole">
         select
             ur.*,
-            ar.name role_name,
-            ar.code role_code
+            ar.name roleName,
+            ar.code roleCode
         from
             t_user_role ur
             left join t_auth_role ar on ur.roleId = ar.id

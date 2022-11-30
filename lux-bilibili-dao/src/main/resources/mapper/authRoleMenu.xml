@@ -7,7 +7,7 @@
         <id column="id" property="id"/>
         <result column="roleId" property="roleId"/>
         <result column="menuId" property="menuId"/>
-        <association property="authElementOperation" javaType="com.lux.bilibili.domain.auth.AuthElementOperation  ">
+        <association property="authMenu" javaType="com.lux.bilibili.domain.auth.AuthMenu">
             <id column="name" property="name"/>
             <id column="code" property="code"/>
         </association>
