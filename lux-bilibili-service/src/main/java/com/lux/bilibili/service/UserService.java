@@ -22,8 +22,15 @@ import java.util.Set;
 @Service
 public class UserService {
 
+    private final UserDao userDao;
+
+    private final UserAuthService userAuthService;
+
     @Autowired
-    private UserDao userDao;
+    public UserService(UserDao userDao, UserAuthService userAuthService) {
+        this.userDao = userDao;
+        this.userAuthService = userAuthService;
+    }
 
     public void addUser(User user) {
         String phone = user.getPhone();
@@ -60,6 +67,9 @@ public class UserService {
         userInfo.setGender(UserConstant.GENDER_UNKNOWN);
         userInfo.setCreateTime(now);
         userDao.addUserInfo(userInfo);
+
+        // add default user auth role
+        userAuthService.addUserDefaultRole(user.getId());
     }
 
     public User getUserByPhone(String phone) {

@@ -21,11 +21,14 @@ import java.util.List;
 @RestController
 public class UserMomentsApi {
 
-    @Autowired
-    private UserMomentsService userMomentsService;
+    private final UserMomentsService userMomentsService;
 
-    @Autowired
-    private UserSupport userSupport;
+    private final UserSupport userSupport;
+
+    public UserMomentsApi(UserMomentsService userMomentsService, UserSupport userSupport) {
+        this.userMomentsService = userMomentsService;
+        this.userSupport = userSupport;
+    }
 
     @ApiLimitedRole(limitedRoleCodeList = {AuthRoleConstant.ROLE_LV0})
     @DataLimited

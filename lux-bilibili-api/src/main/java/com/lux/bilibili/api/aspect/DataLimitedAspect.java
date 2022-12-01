@@ -3,6 +3,7 @@ package com.lux.bilibili.api.aspect;
 import com.lux.bilibili.api.support.UserSupport;
 import com.lux.bilibili.domain.UserMoment;
 import com.lux.bilibili.domain.annotation.ApiLimitedRole;
+import com.lux.bilibili.domain.annotation.DataLimited;
 import com.lux.bilibili.domain.auth.UserRole;
 import com.lux.bilibili.domain.constant.AuthRoleConstant;
 import com.lux.bilibili.service.UserRoleService;
@@ -24,11 +25,15 @@ import java.util.stream.Collectors;
 @Aspect
 public class DataLimitedAspect {
 
-    @Autowired
-    UserSupport userSupport;
+    private final UserSupport userSupport;
+
+    private final UserRoleService userRoleService;
 
     @Autowired
-    UserRoleService userRoleService;
+    public DataLimitedAspect (UserSupport userSupport, UserRoleService userRoleService) {
+        this.userSupport = userSupport;
+        this.userRoleService = userRoleService;
+    }
 
     @Pointcut("@annotation(com.lux.bilibili.domain.annotation.DataLimited)")
     public void check() {
