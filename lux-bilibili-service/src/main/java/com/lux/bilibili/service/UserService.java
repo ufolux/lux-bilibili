@@ -3,6 +3,7 @@ package com.lux.bilibili.service;
 import com.alibaba.fastjson.JSONObject;
 import com.lux.bilibili.dao.UserDao;
 import com.lux.bilibili.domain.PageResult;
+import com.lux.bilibili.domain.RefreshTokenDetail;
 import com.lux.bilibili.domain.User;
 import com.lux.bilibili.domain.UserInfo;
 import com.lux.bilibili.domain.constant.UserConstant;
@@ -14,10 +15,7 @@ import com.mysql.cj.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Service
 public class UserService {
@@ -154,5 +152,56 @@ public class UserService {
             list = userDao.pageListUserInfos(params);
         }
         return new PageResult<>(total, list);
+    }
+
+    public Map<String, Object> loginWithDts(User user) throws Exception {
+        String phone = user.getPhone();
+        if (StringUtils.isNullOrEmpty(phone)) {
+            throw new ConditionException("Phone number cannot be empty!");
+        }
+
+        User dbUser = getUserByPhone(phone);
+        if (dbUser == null) {
+            throw new ConditionException("User doesn't exist!");
+        }
+        String password = user.getPassword();
+
+        String rawPassword;
+        try {
+            rawPassword = RSAUtil.decrypt(password);
+        } catch (Exception e) {
+            throw new ConditionException("Password decryption failed!");
+        }
+
+        String salt = dbUser.getSalt();
+        String md5Password = MD5Util.sign(rawPassword, salt, "UTF-8");
+        if (!md5Password.equals(dbUser.getPassword())) {
+            throw new ConditionException("Wrong password!");
+        }
+
+        Long userId = dbUser.getId();
+        String accessToken = TokenUtil.generateToken(userId);
+        String refreshToken = TokenUtil.generateRefreshToken(userId);
+
+        // save refresh token to DB
+        userDao.deleteRefreshToken(refreshToken, userId);
+        userDao.addRefreshToken(refreshToken, userId, new Date());
+        Map<String, Object> result = new HashMap<>();
+        result.put("accessToken", accessToken);
+        result.put("refreshToken", refreshToken);
+        return result;
+    }
+
+    public void logout(String refreshToken, Long userId) {
+        userDao.deleteRefreshToken(refreshToken, userId);
+    }
+
+    public String refreshAccessToken(String refreshToken) throws Exception {
+        RefreshTokenDetail refreshTokenDetail = userDao.getRefreshTokenDetail(refreshToken);
+        if (refreshTokenDetail == null) {
+            throw new ConditionException("555", "Refresh token doesn't exist or expired!");
+        }
+        Long userId = refreshTokenDetail.getUserId();
+        return TokenUtil.generateToken(userId);
     }
 }

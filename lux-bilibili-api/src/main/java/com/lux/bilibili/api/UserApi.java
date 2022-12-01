@@ -12,7 +12,9 @@ import com.lux.bilibili.service.util.RSAUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class UserApi {
@@ -49,6 +51,28 @@ public class UserApi {
     public JsonResponse<String> login(@RequestBody User user) throws Exception {
         String token = userService.login(user);
         return new JsonResponse<>(token);
+    }
+
+    // Double token
+    @PostMapping("/user-dts")
+    public JsonResponse<Map<String, Object>> loginWithDts(@RequestBody User user) throws Exception {
+        Map<String, Object> tokens = userService.loginWithDts(user);
+        return new JsonResponse<>(tokens);
+    }
+
+    @DeleteMapping("/refresh-token")
+    public JsonResponse<String> logout(HttpServletRequest request) {
+        String refreshToken = request.getHeader("refreshToken");
+        Long userId = userSupport.getCurrentUserId();
+        userService.logout(refreshToken, userId);
+        return JsonResponse.success();
+    }
+
+    @PostMapping("access-token")
+    public JsonResponse<String> refreshAccessToken(HttpServletRequest request) throws Exception {
+        String refreshToken = request.getHeader("refreshToken");
+        String accessToken = userService.refreshAccessToken(refreshToken);
+        return new JsonResponse<>(accessToken);
     }
 
     @PutMapping("/users")

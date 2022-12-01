@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8768e87a-3f15-4fb1-a673-375f5557eae3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/AutoRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/authRole.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/daf28ef8-be14-47f1-bc0f-53fadea76f1c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/daf28ef8-be14-47f1-bc0f-53fadea76f1c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/domain/RefreshTokenDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserMomentsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserMomentsApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/aspect/DataLimitedAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/aspect/DataLimitedAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/UserRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/UserRoleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/userRole.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/userRole.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/AuthRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/AuthRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserAuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-api/src/main/java/com/lux/bilibili/api/UserApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/java/com/lux/bilibili/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/authRole.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/authRole.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-dao/src/main/resources/mapper/user.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/lux-bilibili-service/src/main/java/com/lux/bilibili/service/util/TokenUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +30,9 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -130,17 +126,17 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LuxBilibiliApp">
-    <configuration name="lux_bilibili-endpoints_2 | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="10" requestIdentifier="#10" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="HTTP Request.lux_bilibili-endpoints_2 | #11">
     <configuration name="lux_bilibili-endpoints_2 | #11" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="11" requestIdentifier="#11" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="lux_bilibili-endpoints_2 | #8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="8" requestIdentifier="#8" runType="Run single request">
+    <configuration name="lux_bilibili-endpoints_2 | #12" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="12" requestIdentifier="#12" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="lux_bilibili-endpoints_2 | #9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="9" requestIdentifier="#9" runType="Run single request">
+    <configuration name="lux_bilibili-endpoints_2 | #13" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="13" requestIdentifier="#13" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="lux_bilibili-endpoints_2 | #14" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/lux_bilibili-endpoints_2.http" index="14" requestIdentifier="#14" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="LuxBilibiliApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -158,18 +154,18 @@
     </configuration>
     <list>
       <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #11" />
-      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #10" />
-      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #8" />
-      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #9" />
+      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #12" />
+      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #13" />
+      <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #14" />
       <item itemvalue="Spring Boot.LuxBilibiliApp" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #11" />
-        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #10" />
-        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #9" />
+        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #12" />
+        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #13" />
+        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #14" />
         <item itemvalue="Spring Boot.LuxBilibiliApp" />
-        <item itemvalue="HTTP Request.lux_bilibili-endpoints_2 | #8" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +185,7 @@
       <workItem from="1668404812219" duration="14338000" />
       <workItem from="1668470093772" duration="1995000" />
       <workItem from="1668719049277" duration="14718000" />
-      <workItem from="1669673449824" duration="28144000" />
+      <workItem from="1669673449824" duration="33236000" />
     </task>
     <servers />
   </component>
